@@ -71,10 +71,12 @@
             title: 'List of Things Title 1',
             content: 'List og Things Content 1',
             
+            
         },
          {
             title: 'List of Things Title 2',
             content: 'List og Things Content 2',
+             
             
         },    
     ]
@@ -83,6 +85,7 @@
         {
             title: '2 List of Things Title 1',
             content: '2 List og Things Content 1',
+            
             
         },
          {

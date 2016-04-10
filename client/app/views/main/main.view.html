@@ -1,24 +1,28 @@
 <div class="container">
- 
-<ul class="collapsible" data-collapsible="accordion" watch>
-    <li ng-repeat="single in collapsibleElements">
-        <div class="collapsible-header">{{single.title}}</div>
-        <div class="collapsible-body" >
-           <div ng-repeat="checkbox in collapsibleElements[0].content" ng-if="single.title == 'First'">
-                <input  type="checkbox"  class="filled-in" id="{{checkbox.id}}" ng-model="checkbox.model" />
-                <label for="{{checkbox.id}}">{{checkbox.title}}</label>
-            </div>
-            <div ng-repeat="checkbox in collapsibleElements[1].content" ng-if="single.title == 'Second'">
-                <input  type="checkbox"  class="filled-in" id="{{checkbox.id}}" ng-model="checkbox.model" />
-            <label for="{{checkbox.id}}">{{checkbox.title}}</label>    
-            </div>
-        </div>
-    </li>
-</ul>
-
- <div ng-show="checkbox.model">
+ <div class="row">
+     <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion" watch>
+            <li ng-repeat="single in collapsibleElements">
+                <div class="collapsible-header">{{single.title}}</div>
+                <div class="collapsible-body" >
+                   <div ng-repeat="checkbox in collapsibleElements[0].content" ng-if="single.title == 'First'">
+                        <input  type="checkbox"  class="filled-in" id="{{checkbox.id}}" ng-model="checkbox.model" />
+                        <label for="{{checkbox.id}}">{{checkbox.title}}</label>
+                    </div>
+                    <div ng-repeat="checkbox in collapsibleElements[1].content" ng-if="single.title == 'Second'">
+                        <input  type="checkbox"  class="filled-in" id="{{checkbox.id}}" ng-model="checkbox.model" />
+                    <label for="{{checkbox.id}}">{{checkbox.title}}</label>    
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col s6">
      <p>hello</p>
- </div>
+    </div>
+</div>
+
+ 
 
   <div ui-view></div>
 
