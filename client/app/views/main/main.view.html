@@ -1,17 +1,17 @@
 <div class="container">
  
-
 <ul class="collapsible" data-collapsible="accordion" watch>
     <li ng-repeat="single in collapsibleElements">
         <div class="collapsible-header">{{single.title}}</div>
         <div class="collapsible-body" >
            <div ng-repeat="checkbox in collapsibleElements[0].content" ng-if="single.title == 'First'">
-                <input  type="checkbox"  class="filled-in" id="{{checkbox.id}}" ng-model="checkbox.selected" />
+                <input  type="checkbox"  class="filled-in" id="{{checkbox.id}}" ng-model="checkbox.model" />
                 <label for="{{checkbox.id}}">{{checkbox.title}}</label>
             </div>
             <div ng-repeat="checkbox in collapsibleElements[1].content" ng-if="single.title == 'Second'">
-                <input  type="checkbox"  class="filled-in" id="{{checkbox.id}}" ng-model="checkbox.selected" />
+                <input  type="checkbox"  class="filled-in" id="{{checkbox.id}}" ng-model="checkbox.model" />
                 <label for="{{checkbox.id}}">{{checkbox.title}}</label>
+                
             </div>
         </div>
     </li>
@@ -44,13 +44,11 @@
     </li>
   </ul>
 -->
-  <div ng-repeat='meal in recipes' ng-show="checkbox.selected">
-            <h3>{{meal.type}}</h3>
-            <p>{{meal.description}}</p>
-        </div>
+ 
+ <div ng-show="checkbox.model">
+     <p>hello</p>
+ </div>
+
   <div ui-view></div>
 
-  <div class="footer">
-    <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-  </div>
 </div>
