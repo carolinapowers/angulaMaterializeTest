@@ -66,7 +66,7 @@
     }
 ];  
       
-    $scope.listOfthings1 =  [
+    $scope.listOfThings1 =  [
         {
             title: 'List of Things Title 1',
             content: 'List og Things Content 1',
@@ -81,7 +81,7 @@
         },    
     ]
     
-     $scope.listOfthings2 =  [
+     $scope.listOfThings2 =  [
         {
             title: '2 List of Things Title 1',
             content: '2 List og Things Content 1',

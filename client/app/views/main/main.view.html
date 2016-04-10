@@ -18,7 +18,10 @@
         </ul>
     </div>
     <div class="col s6">
-     <p>hello</p>
+     <div ng-repeat="item in listOfThings1">
+         <h3>{{item.title}}</h3>
+         <p>{{item.content}}</p>
+     </div>
     </div>
 </div>
 
