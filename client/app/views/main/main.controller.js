@@ -95,7 +95,7 @@
         },    
     ]
       
-
+console.log($scope.collapsibleElements[0].content[0].model);
 
   }
 

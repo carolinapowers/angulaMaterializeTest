@@ -18,7 +18,7 @@
         </ul>
     </div>
     <div class="col s6">
-     <div ng-repeat="item in listOfThings1">
+     <div ng-repeat="item in listOfThings1" ng-show="collapsibleElements[0].content[0].model == true">
          <h3>{{item.title}}</h3>
          <p>{{item.content}}</p>
      </div>
