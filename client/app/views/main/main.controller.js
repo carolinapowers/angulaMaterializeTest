@@ -18,9 +18,6 @@
     var vm = this;
 
     vm.user = { username: 'USER'};
-      
-    $scope.recipes = mealFactory.recipes;
-    $scope.selectedMeals = [];
     
     var checkboxes = [
     {
@@ -73,12 +70,12 @@
         {
             title: 'List of Things Title 1',
             content: 'List og Things Content 1',
-            model: 'id1model'
+            
         },
          {
             title: 'List of Things Title 2',
             content: 'List og Things Content 2',
-            model: 'id2model' 
+            
         },    
     ]
     
@@ -86,12 +83,12 @@
         {
             title: '2 List of Things Title 1',
             content: '2 List og Things Content 1',
-            model: '2id1model'
+            
         },
          {
             title: '2 List of Things Title 2',
             content: '2 List og Things Content 2',
-            model: '2id2model'
+           
         },    
     ]
       

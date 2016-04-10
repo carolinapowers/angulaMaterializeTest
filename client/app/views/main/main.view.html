@@ -10,41 +10,12 @@
             </div>
             <div ng-repeat="checkbox in collapsibleElements[1].content" ng-if="single.title == 'Second'">
                 <input  type="checkbox"  class="filled-in" id="{{checkbox.id}}" ng-model="checkbox.model" />
-                <label for="{{checkbox.id}}">{{checkbox.title}}</label>
-                
+            <label for="{{checkbox.id}}">{{checkbox.title}}</label>    
             </div>
         </div>
     </li>
 </ul>
 
-
-
-<!--
-   <ul class="collapsible" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header">First</div>
-      <div class="collapsible-body"> 
-        <div>
-            <input  type="checkbox"  class="filled-in" id="filled-in-box" ng-model="meal.selected" />
-            <label for="filled-in-box">Hello</label>
-        </div> 
-        <div>     
-            <input  type="checkbox"  class="filled-in" id="something-else" ng-model="meal.selected" />
-            <label for="something-else">Hi</label>
-        </div>            
-       </div>
-    </li>
-    <li>
-      <div class="collapsible-header">Second</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header">Third</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-  </ul>
--->
- 
  <div ng-show="checkbox.model">
      <p>hello</p>
  </div>
