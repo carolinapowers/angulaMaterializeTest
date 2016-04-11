@@ -22,6 +22,10 @@
          <h3>{{item.title}}</h3>
          <p>{{item.content}}</p>
      </div>
+     <div ng-repeat="item in listOfThings2" ng-show="collapsibleElements[0].content[1].model == true">
+         <h3>{{item.title}}</h3>
+         <p>{{item.content}}</p>
+     </div>
     </div>
 </div>
 
