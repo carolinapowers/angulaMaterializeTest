@@ -14,7 +14,8 @@ angular
     'ui.router',
     'ngSanitize',
     'ngTouch',
-    'ui.materialize'
+    'ui.materialize',
+    'ngMaterial'
   ])
   .config(function ($urlRouterProvider) {
     $urlRouterProvider.when('', '/'); // redirect to root if the state is ''
